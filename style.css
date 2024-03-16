@@ -1,0 +1,110 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0
+}
+
+
+hgroup {
+  text-align: center;
+  background-color: lightsalmon;
+}
+
+hgroup>p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+article>h2 {
+  text-align: center;
+}
+
+
+article {
+  text-align: center;
+}
+
+/* less than 768px */
+figure>img {
+  height: 40vmin;
+}
+
+[id|=card] {
+  margin: 1em;
+  background-color: orange;
+  border: 0.8em solid lightsalmon;
+}
+
+[id|=card]>h2 {
+  background-color: lightsalmon;
+}
+
+/* between 768px and 992px - Tablets*/
+@media (min-width: 768px) {
+  #cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  [id|=card] {
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
+    width: 33vw;
+    justify-content: space-between;
+  }
+
+  figure>img {
+    width: 33vw;
+    height: auto;
+  }
+}
+
+/* between 993px and infintospx - Laptops and Desktops */
+@media (min-width: 992px) {
+  #cards {
+    flex-wrap: nowrap;
+  }
+
+  figure>img {
+    width: 28vw;
+  }
+}
+
+@media(min-width: 1200px) {
+  figure>img {
+    width: 20vw;
+  }
+}
+
+/* @media (min-width: 992px) { */
+/*   #cards { */
+/*     box-sizing: border-box; */
+/*     display: flex; */
+/*     flex-direction: row; */
+/*   } */
+/**/
+/*   figure>img { */
+/*     width: 100%; */
+/*     height: 25vmin; */
+/*     max-width: 30vw; */
+/*   } */
+/**/
+/*   [id|=card]>p { */
+/*     margin: 0.3rem; */
+/*   } */
+/* } */
+/**/
+/* @media (min-width: 1200px) {} */
